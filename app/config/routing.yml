@@ -1,0 +1,7 @@
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+
+leboncoin:
+    resource:  "@LeboncoinBundle/Resources/config/routing.yml"
+    prefix:    /leboncoin
+

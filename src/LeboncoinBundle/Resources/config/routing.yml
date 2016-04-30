@@ -1,0 +1,3 @@
+leboncoin_homepage:
+    path:     /leboncoin
+    defaults: { _controller: LeboncoinBundle:Leboncoin:index }
