@@ -3,7 +3,6 @@
 namespace LeboncoinBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use NotificationBundle\Entity\Notification;
 
 class LeboncoinController extends Controller
 {
@@ -18,9 +17,5 @@ class LeboncoinController extends Controller
                 'regions' => $regions));
 
     }
-	
-	public function ListeRegion(){
-		
-		
-	}
+
 }

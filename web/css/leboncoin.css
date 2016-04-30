@@ -1,0 +1,344 @@
+html,
+body,
+div,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+header,
+footer,
+main,
+article,
+section,
+aside,
+figure,
+fieldset,
+input,
+textarea {
+    margin: 0;
+    padding: 0;
+}
+header,
+footer,
+main,
+article,
+section,
+aside {
+    display: block;
+    font-size:16px;
+}
+img {
+    border: none;
+}
+body {
+    font: 1em/1.5 lato, corbel, verdana, arial, sans-serif;
+    color: #202020;
+    background-color: #fff;
+}
+.clearfix::after,
+.form-block::after {
+    clear: both;
+    content: ' ';
+    display: table;
+}
+.ui-state-init .ui-datepicker {
+    display: none;
+}
+h2 {
+    font-size: 1.7em;
+}
+img {
+    max-width: 100%;
+    height: auto !important;
+}
+
+.round-btn {
+    /*@lineHeight: 1em;*/
+    -webkit-border-radius: 1.1em;
+    border-radius: 1.1em;
+    height: 2.2em;
+    display: inline-block;
+    padding: 0 1.1em;
+    border-width: 1px;
+    border-style: solid;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+a.round-btn,
+span.round-btn {
+    /*line-height: @h;*/
+    padding-top: 0.225em;
+}
+a.round-btn {
+    /*line-height: @inputHeight;*/
+    text-decoration: none;
+}
+.round-btn.action-btn,
+.round-btn.form-btn,
+.round-btn.fill-btn {
+    border-color: #407491;
+}
+
+
+.header .home {
+    min-height: 43px;
+    background: url('../images/logo-alternatives-pro.svg') no-repeat;
+    background-size: contain;
+    /*display: block;*/
+    float: left;
+    width: 24%;
+}
+.header li {
+    display: inline-block;
+}
+.header .content-wrap {
+    position: relative;
+    padding: 1em 0;
+    overflow: hidden;
+}
+
+.header nav {
+    /*        position: absolute;
+          bottom: 1em;
+          right: 0;*/
+    float: right;
+    font-size: 1.1em;
+}
+.header nav ul {
+    /*margin-bottom: 1.4em;*/
+    font-size: 0.9em;
+}
+.header nav ul li {
+    vertical-align: top;
+}
+.header nav ul li.nav-item a {
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid transparent;
+}
+.header nav ul li.nav-item.ui-state-active a,
+.header nav ul li.nav-item a:hover {
+    color: #c12451;
+    border-color: #c12451;
+}
+.header nav ul li + li {
+    margin-left: 0.2em;
+}
+.header .user-action .round-btn {
+    border-color: #407491;
+}
+.header .user-action .round-btn.fill-btn {
+    background-color: #407491;
+    color: #fff;
+}
+.header .user-action .round-btn.fill-btn:hover {
+    color: #407491;
+}
+.header .user-action .round-btn.border-btn:hover {
+    color: #fff !important;
+}
+
+
+
+
+
+.footer {
+    background-color: #44687d;
+    padding: 0.8em 0;
+    color: #fff;
+}
+.footer > div {
+    position: relative;
+}
+
+.footer .ml {
+    /*        display: inline-block;
+          vertical-align: middle;*/
+    text-align: center;
+    padding: 0.4em 0;
+}
+.footer .ml a {
+    margin-left: 2em;
+    color: inherit;
+}
+.footer.fixed-footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+#loginform {
+    background: url('../images/picto-connexion.svg') no-repeat 2% 20%;
+    background-size: 30%;
+    border-bottom: 1px solid #c1c1c1;
+    margin-top: 2em;
+}
+#registerform {
+    background: url('../images/picto-inscription.svg') no-repeat 2% 10%;
+    background-size: 30%;
+    margin-top: 2em;
+}
+.forgotten-pass {
+    text-align: right;
+    font-size: 0.9em;
+    color: #407491;
+}
+
+
+.content-wrap,
+.page-content{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.content-wrap,
+.page-content{
+    margin: 0 auto;
+}
+.content-wrap {
+    max-width: 1001px;
+}
+.page-content {
+    max-width: 2048px;
+}
+
+
+.main-content {
+    display: table-cell;
+    vertical-align: top;
+}
+.main-content {
+    width: 70%;
+}
+
+
+.header .user-action .round-btn {
+    border-color: #407491;
+}
+.header .user-action .round-btn.border-btn {
+    color: #407491;
+}
+
+
+/*    .main
+    {*/
+.round-btn.border-btn {
+    color: #407491;
+    border-color: #407491;
+}
+.round-btn.border-btn:hover {
+    background-color: #407491;
+    color: #fff;
+}
+.round-btn.form-btn,
+.round-btn.fill-btn {
+    background-color: #407491;
+}
+.round-btn.form-btn:hover,
+.round-btn.fill-btn:hover {
+    color: #407491 !important;
+}
+
+@media only screen and (max-width: 1350px) {
+    .page-content aside .as-block {
+        padding-left: 1em;
+    }
+    .page-content aside .picto-block::before {
+        width: auto;
+        left: 1em;
+    }
+}
+@media only screen and (max-width: 1260px) {
+    .main-content,
+    aside {
+        display: block;
+        float: left;
+    }
+    .page-content {
+        overflow: hidden;
+    }
+}
+@media only screen and (max-width: 698px) {
+    .page-content aside {
+        display: none;
+    }
+    .page-content .main-content {
+        float: none;
+        width: auto;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .bandeau-top {
+        padding: 0;
+    }
+    .bandeau-top .top-content {
+        padding-bottom: 2em;
+    }
+    .home .testimony {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    .home .home-testimony-list .home-item {
+        float: none;
+        width: auto;
+    }
+    .home .home-testimony-list .home-item + .home-item {
+        margin-left: 0;
+    }
+    .home .contact .content-wrap {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    .home .videos {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    .home .videos .video-block,
+    .home .videos .video-detail {
+        float: none;
+        width: auto;
+    }
+    .header .home {
+        float: none;
+        width: auto;
+        display: block;
+        margin: 0 0 1% 5%;
+    }
+    .footer {
+        text-align: center;
+    }
+    .footer .rf-block,
+    .footer .upmc-block {
+        position: static;
+        margin-top: 0;
+    }
+    .footer .ml {
+        margin: 1em 0;
+    }
+}
+
+.main{
+    width:85%;
+}
+
+.regions {
+    text-align:right;
+    margin-top:20px;
+
+}
+
+.header{
+    background :rgb(245, 107, 42);
+    color:white;
+}

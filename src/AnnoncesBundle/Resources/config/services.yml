@@ -1,0 +1,4 @@
+services:
+#    notification.example:
+#        class: NotificationBundle\Example
+#        arguments: ["@service_id", "plain_value", %parameter%]

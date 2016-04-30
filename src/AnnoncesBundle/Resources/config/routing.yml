@@ -1,0 +1,3 @@
+ajouter_annonce:
+    path:     /ajouterUneAnnonce
+    defaults: { _controller: AnnoncesBundle:Annonces:ajouter}
