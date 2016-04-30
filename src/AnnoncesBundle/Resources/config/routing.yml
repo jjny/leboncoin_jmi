@@ -1,3 +1,11 @@
 ajouter_annonce:
     path:     /ajouterUneAnnonce
-    defaults: { _controller: AnnoncesBundle:Annonces:ajouter}
+    defaults: { _controller: AnnoncesBundle:Annonces:ajouter }
+
+offres_annonce:
+    path:     /offres
+    defaults: { _controller: AnnoncesBundle:Annonces:voirOffres}
+
+demandes_annonce:
+    path:     /demandes
+    defaults: { _controller: AnnoncesBundle:Annonces:voirDemandes }

@@ -89,7 +89,6 @@ a.round-btn {
 
 .header .home {
     min-height: 43px;
-    background: url('../images/logo-alternatives-pro.svg') no-repeat;
     background-size: contain;
     /*display: block;*/
     float: left;
@@ -104,12 +103,12 @@ a.round-btn {
     overflow: hidden;
 }
 
-.header nav {
+.header nav, .main {
     /*        position: absolute;
           bottom: 1em;
           right: 0;*/
     float: right;
-    font-size: 1.1em;
+    /* font-size: 1.1em;*/
 }
 .header nav ul {
     /*margin-bottom: 1.4em;*/
@@ -127,8 +126,7 @@ a.round-btn {
 }
 .header nav ul li.nav-item.ui-state-active a,
 .header nav ul li.nav-item a:hover {
-    color: #c12451;
-    border-color: #c12451;
+    text-decoration : underline;
 }
 .header nav ul li + li {
     margin-left: 0.2em;
@@ -179,13 +177,13 @@ a.round-btn {
 
 
 #loginform {
-    background: url('../images/picto-connexion.svg') no-repeat 2% 20%;
+
     background-size: 30%;
     border-bottom: 1px solid #c1c1c1;
     margin-top: 2em;
 }
 #registerform {
-    background: url('../images/picto-inscription.svg') no-repeat 2% 10%;
+
     background-size: 30%;
     margin-top: 2em;
 }
@@ -328,14 +326,47 @@ a.round-btn {
     }
 }
 
-.main{
+.main, .well{
     width:85%;
 }
 
 .regions {
     text-align:right;
     margin-top:20px;
+    list-style-type: none;
+    width:85%;
 
+}
+
+.form_title, .h2_annonces{
+    font-size:14px;
+    color:black;
+    margin-top:10px;
+    background:#e6e6e6 none repeat scroll 0 0;
+    width:85%;
+    padding: 10px;
+}
+
+.demandes, .offres{
+    width:85%;
+    padding: 10px;
+
+}
+
+.demandes tr, .offres tr{
+    border: 1px solid #e6e6e6;
+}
+
+.titre_annonce{
+    font-size:18px;
+    font-weight: bold;
+    color:#407491;
+}
+
+.prix_annonce{
+    font-size:20px;
+    font-weight: bold;
+    color:rgb(245, 107, 42);
 }
 
 .header{

@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Accueil{% endblock %}</title>
+        <title>{% block title %}Ajouter une annonce{% endblock %}</title>
         <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}" />
         <link rel="stylesheet" href="{{ asset('css/leboncoin.css') }}" />
     </head>
@@ -13,13 +13,13 @@
       <h1 class="image-text home">Leboncoin</h1>
       <nav>
         <ul>
-          <li class="nav-item"><a class="round-btn" href="#">Accueil</a></li>
-          <li class="nav-item"><a class="round-btn" href="#">Déposer une annonce</a></li>
-          <li class="nav-item"><a class="round-btn" href="#">Offres</a></li>
-          <li class="nav-item"><a class="round-btn" href="#">Demandes</a></li>
-          <li class="nav-item"><a class="round-btn" href="#">Mes annonces</a></li>
-          <li class="nav-item"><a class="round-btn" href="#">Boutiques</a></li>
-          <li class="user-action"> <a href="#" class="round-btn fill-btn">Connexion</a> </li>
+            <li class="nav-item"><a class="round-btn" href="{{ path('leboncoin_homepage') }}">Accueil</a></li>
+            <li class="nav-item"><a class="round-btn" href="{{ path('ajouter_annonce') }}">Déposer une annonce</a></li>
+            <li class="nav-item"><a class="round-btn" href="{{ path('offres_annonce') }}">Offres</a></li>
+            <li class="nav-item"><a class="round-btn" href="{{ path('demandes_annonce') }}">Demandes</a></li>
+            <li class="nav-item"><a class="round-btn" href="#">Mes annonces</a></li>
+            <li class="nav-item"><a class="round-btn" href="#">Boutiques</a></li>
+            <li class="user-action"> <a href="#" class="round-btn fill-btn">Connexion</a> </li>
         </ul>
       </nav>
     </div>

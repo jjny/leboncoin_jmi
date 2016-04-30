@@ -3,12 +3,7 @@
 namespace AnnoncesBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Symfony\Component\Form\AbstractType;
-use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
-use Symfony\Component\Form\Extension\Core\Type\DateType;
-use Symfony\Component\Form\Forms;
-use Symfony\Component\Form\Extension\HttpFoundation\HttpFoundationExtension;
 use Symfony\Component\Form\Extension\Core\Type\IntegerType;
 use Symfony\Component\Form\Extension\Core\Type\FormType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
@@ -91,6 +86,34 @@ class AnnoncesController extends Controller
         return $this->render('AnnoncesBundle:Annonces:ajouter.html.twig', array(
             'form' => $form->createView(),
         ));
+    }
+
+    public function voirOffresAction(){
+        $em = $this->container->get('doctrine')->getEntityManager();
+
+        $offres = $em->getRepository('AnnoncesBundle:Annonces')->findBy(
+            array('type' =>'Offres')
+        );
+
+        return $this->container->get('templating')->renderResponse('AnnoncesBundle:Annonces:offres.html.twig',
+            array(
+                'offres' => $offres));
+
+    }
+
+    public function voirDemandesAction(){
+        $em = $this->container->get('doctrine')->getEntityManager();
+
+        $demandes = $em->getRepository('AnnoncesBundle:Annonces')->findBy(
+            array('type' =>'Demandes')
+        );
+
+
+
+        return $this->container->get('templating')->renderResponse('AnnoncesBundle:Annonces:demandes.html.twig',
+            array(
+                'demandes' => $demandes));
+
     }
 
 }
