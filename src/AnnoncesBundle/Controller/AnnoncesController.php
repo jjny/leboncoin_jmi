@@ -95,9 +95,12 @@ class AnnoncesController extends Controller
             array('type' =>'Offres')
         );
 
+        $count_offres = count($offres);
+
         return $this->container->get('templating')->renderResponse('AnnoncesBundle:Annonces:offres.html.twig',
             array(
-                'offres' => $offres));
+                'offres' => $offres,
+                'count_offres' => $count_offres));
 
     }
 
@@ -109,10 +112,12 @@ class AnnoncesController extends Controller
         );
 
 
+        $count_demandes = count($demandes);
 
         return $this->container->get('templating')->renderResponse('AnnoncesBundle:Annonces:demandes.html.twig',
             array(
-                'demandes' => $demandes));
+                'demandes' => $demandes,
+                'count_demandes' => $count_demandes));
 
     }
 
